@@ -29,7 +29,10 @@ jobs:
 
       - name: Run lint
         run: npm run lint
-        
+
+      - name: Build application
+        run: npm run build
+
       - name: List files
         run: ls
 
