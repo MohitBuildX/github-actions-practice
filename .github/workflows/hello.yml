@@ -10,10 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
-       - name: Checkout code
-         uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-       - name: Print message
-         run: echo "My first CI pipeline is running"
-      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: List files
+        run: ls
+
+      - name: Print message
+        run: echo "My first CI pipeline is running"
