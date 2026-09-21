@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/MohitBuildX/github-actions-practice/issues"
   },
-  "homepage": "https://github.com/MohitBuildX/github-actions-practice#readme"
+  "homepage": "https://github.com/MohitBuildX/github-actions-practice#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0"
+  }
 }
