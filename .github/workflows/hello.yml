@@ -24,6 +24,9 @@ jobs:
       - name: Run application
         run: node src/app.js
 
+      - name: Run tests
+        run: npm test
+
       - name: List files
         run: ls
 
